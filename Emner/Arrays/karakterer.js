@@ -14,8 +14,8 @@ Ekstra udfordring (valgfri):
 	7.	Sorter karakterer i stigende rækkefølge (lav til høj) og udskriv den sortede liste. */
 
     let karakterer = [2, 4, 7, 10, 12];
-
     let højesteKarakter = karakterer[0];
+    let sum = 0;
 
     karakterer.push(0);
 
@@ -29,4 +29,10 @@ Ekstra udfordring (valgfri):
 
     console.log("Den højeste karakter er:", højesteKarakter)
 
-    
+    karakterer.forEach(function(mink) {
+        sum += mink;
+    });
+
+    console.log("Den samlede værdi af de forskellige karakterer er:", sum)
+
+    console.log(sum/karakterer.length)
