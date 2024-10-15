@@ -34,5 +34,7 @@ Ekstra udfordring (valgfri):
     });
 
     console.log("Den samlede værdi af de forskellige karakterer er:", sum)
-
+/* Opgave 5 */
     console.log(sum/karakterer.length)
+
+    
