@@ -34,21 +34,40 @@ class Admanager {
         this.ads.push(ad)
     }
 
-    removeAd(id){
+    removeAd(id) {
+        const initialLength = this.ads.length; 
+
+        this.ads = this.ads.filter(ad => ad.id !== id); 
+        
+        if (this.ads.length === initialLength) {
+            console.log(`No ad found with ID: ${id}`);
+        } else {
+            console.log(`Ad with ID: ${id} has been removed.`);
+        }
     }
 
     listAds(){
-        console.log(`Current ads: ${this.ads}`)
+        console.log(`Current ads: `)
+        this.ads.forEach((ad, index) => {
+            console.log(`Ad ${index + 1}: `)
+            ad.getDetails();
+        });
     }
 }
 
-const ad1 = new Ad("1", "Nanna", "bing bong ching chong", 187, 26.71)
+const ad1 = new Ad(1, "Nanna", "bing bong ching chong", 187, 26.71)
+const ad2 = new Ad(2, "Viggo", "bing bong ching chong", 125, 26.71)
+
+
 
 const minAd = new Admanager()
 
 ad1.getDetails();
-
+ad2.getDetails();
 
 minAd.addAd(ad1);
+minAd.addAd(ad2);
+
+minAd.removeAd(1);
 minAd.listAds();
 
