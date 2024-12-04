@@ -24,3 +24,4 @@ let sum = arr[0];
 }
 
 console.log(highest(arr));
+
