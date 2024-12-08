@@ -28,3 +28,4 @@ function divide_numbers_in_list(arr){
 let arr = [1, 5, "hest", 14, "trold", 5, 1, 2]
 
 divide_numbers_in_list(arr);
+
