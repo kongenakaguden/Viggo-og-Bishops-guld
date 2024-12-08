@@ -1,9 +1,9 @@
 /*   1.	Opret en tom array kaldet shoppingListe.
-    2.	Tilføj tre varer til indkøbslisten ved hjælp af push.
-	3.	Brug pop til at fjerne den sidste vare fra listen (da du ændrede mening og ikke vil købe den).
-	4.	Brug unshift til at tilføje en vare i starten af listen (da det er noget, du virkelig har brug for).
-	5.	Brug shift til at fjerne den første vare fra listen (du fandt den allerede derhjemme).
-	6.	Brug slice til at oprette en ny liste, der kun indeholder de to første varer i shoppingListe (i tilfælde af at du vil lave en mindre tur).
+    2.	Tilfj tre varer til indkbslisten ved hjlp af push.
+	3.	Brug pop til at fjerne den sidste vare fra listen (da du ndrede mening og ikke vil kbe den).
+	4.	Brug unshift til at tilfje en vare i starten af listen (da det er noget, du virkelig har brug for).
+	5.	Brug shift til at fjerne den frste vare fra listen (du fandt den allerede derhjemme).
+	6.	Brug slice til at oprette en ny liste, der kun indeholder de to frste varer i shoppingListe (i tilflde af at du vil lave en mindre tur).
 	7.	Udskriv den oprindelige shoppingListe og den nye, mindre liste. */
 
 // Opgave 1:
@@ -12,9 +12,9 @@ let liste = [];
 
 // Opgave 2:
 
-liste.push("Æbler");
+liste.push("bler");
 liste.push("Bananer");
-liste.push("Pærer");
+liste.push("Prer");
 liste.push("Ost");
 console.log("Opgave 2: ");
 console.log(liste);
@@ -27,7 +27,7 @@ console.log(liste);
 
 // Opgave 4:
 
-liste.unshift("Mælk");
+liste.unshift("Mlk");
 console.log("Opgave 4: ");
 console.log(liste);
 

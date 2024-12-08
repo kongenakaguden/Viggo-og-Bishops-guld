@@ -1,4 +1,4 @@
-/* Øvelsestime opgasver */
+/* velsestime opgasver */
 
 
 class Ad {

@@ -26,26 +26,26 @@ const behandlKunde = (kundeListe) => {
     console.log("Behandler kunde: " + kundeListe.shift());
     kundeliste.shift();
     if (kundeListe.length = 0){
-        console.log("Ingen kunder i kø");
+        console.log("Ingen kunder i k");
     }
 }
 
 liste = ["Bent", "Per"]
 
 
-const sætIKø = (kundeListe, kundeNavn) => {
+const stIK = (kundeListe, kundeNavn) => {
 
     kundeListe.push(kundeNavn);
-    console.log(`${kundeNavn} sat i kø`)
+    console.log(`${kundeNavn} sat i k`)
     console.log(kundeListe);
 
 }
 
-sætIKø(liste, "Erik");
+stIK(liste, "Erik");
 
 const modificerKunde = (kundeListe, index, nyKunde) => {
     if (index > kundeListe.length) {console.log("forkert index")} else {
-    console.log(`Gammel kunde: ${kundeListe[index]}, ændres til: ${nyKunde}`)
+    console.log(`Gammel kunde: ${kundeListe[index]}, ndres til: ${nyKunde}`)
     kundeListe[index] = nyKunde;
     console.log(kundeListe);}
 
@@ -61,8 +61,8 @@ let Bent = {
     password: ":("
 }
 
-const modKunde = (kunde, attr, værdi) => {
-    kunde[attr] = værdi
+const modKunde = (kunde, attr, vrdi) => {
+    kunde[attr] = vrdi
     return kunde;
     
 }
@@ -72,7 +72,7 @@ modKunde(Bent, "adresse", "fuckmigvej")
 console.log(Bent);
 
 
-const sætKundeIKø2 = (kundeListe, kundeObjekt) => {
+const stKundeIK2 = (kundeListe, kundeObjekt) => {
     kundeListe.push(kundeObjekt);
     console.log(kundeListe);
 
@@ -87,8 +87,8 @@ let listen = []
 let objekt1 = { navn: "Alice", alder: 12}
 let objekt2 = { navn: "Erik", alder: 23}
 
-sætKundeIKø2(listen, objekt1)
-sætKundeIKø2(listen, objekt2);
+stKundeIK2(listen, objekt1)
+stKundeIK2(listen, objekt2);
 
 const nytKundenavn = (kundeObjekt, nytNavn) => {
     

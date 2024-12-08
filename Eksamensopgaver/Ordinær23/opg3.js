@@ -13,8 +13,8 @@ function randomsum(a_max, b_max) {
 randomsum(4, 5);
 
 // Delopgave 3.2
-// Her har jeg gjort const til let, for at man kan redigere på værdien af variablen.
-// Derefter har jeg fået den til at return max, sådan den har et stoppested, og kan printe max til konsollen.
+// Her har jeg gjort const til let, for at man kan redigere p vrdien af variablen.
+// Derefter har jeg fet den til at return max, sdan den har et stoppested, og kan printe max til konsollen.
 function max_member(array_A) {
   let max = 0;
   for (let i = 0; i < array_A.length; i++) {
@@ -27,7 +27,7 @@ function max_member(array_A) {
 console.log(max_member([2, 7, 4]));
 
 // Delopgave 3.3
-// = operatoren skal skiftes til === sådan at det er når a[0] er præcist 0;
+// = operatoren skal skiftes til === sdan at det er nr a[0] er prcist 0;
 function count_zeros(A) {
   let zeros = 0;
   do {
@@ -40,7 +40,7 @@ function count_zeros(A) {
 console.log(count_zeros([0, 0, 0, 0, 1, 1, 1, 1, 1, 1]));
 
 // Delopgave 3.4
-// Sætter først result indenfor scope, så ændrer jeg let i = l, til let i = 0
+// Stter frst result indenfor scope, s ndrer jeg let i = l, til let i = 0
 let styrker_1 = [21, 4, 21];
 // --> 1
 let styrker_2 = [1, 2, 3, 4];
@@ -61,8 +61,8 @@ console.log(insekt(styrker_2));
 console.log(insekt(styrker_3));
 
 // Delopgave 3.5
-// Fikser først result stavefejlen.
-// Derefter laver jeg om på rækkefølgen af [j][i] til [i][j] sådan den returner det rigtige
+// Fikser frst result stavefejlen.
+// Derefter laver jeg om p rkkeflgen af [j][i] til [i][j] sdan den returner det rigtige
 let A = [
   [1, 2, 3],
   [4, 5, 6],

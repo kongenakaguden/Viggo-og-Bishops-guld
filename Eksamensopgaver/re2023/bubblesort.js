@@ -1,36 +1,26 @@
-// print an array
-
-function byt(arr, i, j) {
-    let temp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = temp
-
-}
-function print_array(a) {
-    console.log("["+a.toString()+"]")
-}
+// Delopgave 1.1
 
 
 let a = [2, 1, 3];
-print_array(a);
-byt(a, 0, 1);
-print_array(a);
+console.log(a);
+const byt = (arr, i, j) => {
+    let temp = 0;
+    temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+}
+byt(a,0,1);
+console.log(a);
 
-function bubblesort(a){
-    // Loop igennem array for at få værdierne for i
-    for (let i = 0; i < a.length; i++){
-        //Loop igennem for at få værdierne for j, sådan vi har værdier at sammenligne med
-        for (let j = 0; j < a.length  - 1; j++){
-            if (a[j] > a[j + 1]) {
-                let temp = a[j];
-                a[j] = a[j + 1];
-                a[j + 1] = temp
-            } 
-            console.log(a)
-            
+// Delopgave 1.2
+
+let a1 = [5, 4, 1, 2, 3]
+
+const bubblesort = (arr) => {
+    let temp = 0;
+    for (let j = 0; j < arr.length; j++){
+        if (temp < arr[j]) {
+            temp = arr[j];
         }
     }
 }
-
-let b = [5, 4, 1, 2, 3]
-bubblesort(b);

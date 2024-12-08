@@ -1,7 +1,7 @@
 // 8x8 matrixer
 
 //Delopgave 1.1
-//For at løse delopgave 1.1 vil jeg tage de 2 arrays og lægge dem sammen. Det vil jeg gøre ved først at loop igennem array a og push dets værdier til array c, og derefter loop igennem array b og tilføje dets værdier til array c.
+//For at lse delopgave 1.1 vil jeg tage de 2 arrays og lgge dem sammen. Det vil jeg gre ved frst at loop igennem array a og push dets vrdier til array c, og derefter loop igennem array b og tilfje dets vrdier til array c.
 let array_a = [1, 2, 3];
 let array_b = [4, 5, 6];
 
@@ -30,9 +30,9 @@ const stringifyDotchars = (dotchars) => {
   // Start med en tom dotstring
   let dotstring = [];
 
-  // Gå igennem hver linje i de 8 linjer af dotchars
+  // G igennem hver linje i de 8 linjer af dotchars
   for (let i = 0; i < 8; i++) {
-    // Start med en tom linje for denne række
+    // Start med en tom linje for denne rkke
     let combinedline = [];
     // Saml i-te linje fra hver dotchar
     for (let dotchar of dotchars) {
@@ -81,7 +81,7 @@ const leftPar64 = [
   [0, 0, 0, 0, 0, 0, 0, 0],
 ];
 const rightPar64 = [
-  // højreparantes
+  // hjreparantes
   [0, 0, 0, 1, 0, 0, 0, 0],
   [0, 0, 0, 0, 1, 0, 0, 0],
   [0, 0, 0, 0, 1, 1, 0, 0],
@@ -113,22 +113,22 @@ const t64 = [
 ];
 
 function printDotstring(dotstring, printChar = "#") {
-    const spaceChar = " "; // Bruges til at repræsentere 0
+    const spaceChar = " "; // Bruges til at reprsentere 0
 
-    // Iterér over hver række i dotstring
+    // Iterr over hver rkke i dotstring
     for (let i = 0; i < dotstring.length; i++) {
-        let line = ""; // Start med en tom streng til denne række
+        let line = ""; // Start med en tom streng til denne rkke
 
-        // Iterér over hver bit i rækken
+        // Iterr over hver bit i rkken
         for (let j = 0; j < dotstring[i].length; j++) {
             if (dotstring[i][j] === 1) {
-                line += printChar; // Tilføj printChar for 1
+                line += printChar; // Tilfj printChar for 1
             } else {
-                line += spaceChar; // Tilføj spaceChar for 0
+                line += spaceChar; // Tilfj spaceChar for 0
             }
         }
 
-        console.log(line); // Udskriv den samlede række
+        console.log(line); // Udskriv den samlede rkke
     }
 }
 

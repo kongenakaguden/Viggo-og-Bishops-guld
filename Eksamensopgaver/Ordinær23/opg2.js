@@ -38,15 +38,15 @@ class Studie {
         this.eksaminer = [];
     }
 
-    tilføjKursus(kursus) {
+    tilfjKursus(kursus) {
         this.kurser.push(kursus);
     }
 
-    tilføjKursist(kursist) {
+    tilfjKursist(kursist) {
         this.kursister.push(kursist);
     }
 
-    tilføjEksamen(eksamen) {
+    tilfjEksamen(eksamen) {
         this.eksaminer.push(eksamen);
     }
 
@@ -64,9 +64,9 @@ const eksamen = new Eksamen(kursist, kursus)
 
 const itStudium = new Studie();
 
-itStudium.tilføjKursist(kursist);
-itStudium.tilføjKursus(kursus);
-itStudium.tilføjEksamen(eksamen);
+itStudium.tilfjKursist(kursist);
+itStudium.tilfjKursus(kursus);
+itStudium.tilfjEksamen(eksamen);
 
 console.log(itStudium)
 const kursistEksaminer = itStudium.findEksaminer(kursist);

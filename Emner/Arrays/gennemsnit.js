@@ -18,7 +18,7 @@ gennemsnit(gennemsnitAfArray);
 
 let arr = [2, 5, 1, 7, 3, 8, 3, -6, -2, -7, 64];
 
-function findStøreste(array){
+function findStreste(array){
     let sum = array[0];
     for(let i = 1; i < array.length; i++){
         if (sum < array[i]){
@@ -28,10 +28,10 @@ function findStøreste(array){
  return sum
 }
 
-console.log(findStøreste(arr));
+console.log(findStreste(arr));
 
 
-const words = ["kat", "elefant", "bil", "computer", "hus", "køkken", "skole", "træ", "bord", "bibliotek"];
+const words = ["kat", "elefant", "bil", "computer", "hus", "kkken", "skole", "tr", "bord", "bibliotek"];
 
 const longWords = [];
 function nyarray( words){

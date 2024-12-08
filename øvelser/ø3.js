@@ -8,23 +8,23 @@ function opsparing(su, months) {
     let sum = 0;
     let brugt = 0;
 
-    // Simuler månedlige SU-indbetalinger
+    // Simuler mnedlige SU-indbetalinger
     for (let i = 1; i <= months; i++) {
         sum += su;
-        console.log(`Måned: ${i}: Total opsparet: ${sum} kr.`);
+        console.log(`Mned: ${i}: Total opsparet: ${sum} kr.`);
 
-        // Start byture efter 12 måneder
+        // Start byture efter 12 mneder
         if (i > 12) {
             let bytur = 1;
 
-            while (sum >= 500) { // Fortsæt så længe opsparingen er over 500 kr.
+            while (sum >= 500) { // Fortst s lnge opsparingen er over 500 kr.
                 let procent = bytur; // Brug procent svarende til bytursnummeret
-                brugt = sum * procent / 100; // Beregn beløbet der bruges
-                sum -= brugt; // Træk det brugte beløb fra opsparingen
+                brugt = sum * procent / 100; // Beregn belbet der bruges
+                sum -= brugt; // Trk det brugte belb fra opsparingen
 
                 console.log(`Bytur: ${bytur}: Brugt ${procent}% = ${brugt.toFixed(2)} kr. Total opsparing = ${sum.toFixed(2)} kr.`);
 
-                bytur++; // Gå til næste bytur
+                bytur++; // G til nste bytur
                 if (sum < 500) break; // Stop, hvis opsparingen er under 500 kr.
             }
         }
@@ -58,9 +58,9 @@ sumTwoNumbers(27, 61);
 
 const checkNumber = (num) => {
     if (num > 10){
-        console.log(`${num} er større end 10`)
+        console.log(`${num} er strre end 10`)
     } else {
-        console.log(`${num} er ikke større end 10`)
+        console.log(`${num} er ikke strre end 10`)
     }
 }
 

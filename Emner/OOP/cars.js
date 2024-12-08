@@ -1,7 +1,7 @@
 /* Bil-klasserne */
 
 class Car { // Changed 'car' to 'Car'
-    // Objektets værdier (Blueprintet)
+    // Objektets vrdier (Blueprintet)
     constructor(make, year, model, price,) {
         this.make = make;
         this.year = year;

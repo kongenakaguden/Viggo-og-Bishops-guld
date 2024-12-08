@@ -5,7 +5,7 @@ function divide_numbers_in_list(arr){
         let result;
 
         try {
-            //Tjek om både tæller og nævner er et tal
+            //Tjek om bde tller og nvner er et tal
 
             if (typeof arr[i] !== 'number' || typeof arr[i+1] == 'number') { throw new Error(`${arr[i]} is not a number`);
         }

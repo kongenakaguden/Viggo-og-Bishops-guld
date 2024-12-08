@@ -4,7 +4,7 @@ function tower(arr) {
         if (arr[i] < arr[i+1])
         number_towers++
     }
-    return number_towers;   // Funktionen returnere antallet af tårne
+    return number_towers;   // Funktionen returnere antallet af trne
   }
   
 

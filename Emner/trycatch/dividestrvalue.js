@@ -8,7 +8,7 @@ function divideStringValue(str, divisor) {
         throw new Error("Strengen kan ikke omdannes til et tal.");
       }
       
-      // Divider med divisor, og håndter division med nul
+      // Divider med divisor, og hndter division med nul
       if (divisor === 0) {
         throw new Error("Kan ikke dividere med nul.");
       }
@@ -18,7 +18,7 @@ function divideStringValue(str, divisor) {
       console.log(result);  // Udskriv resultatet
       
     } catch (error) {
-      // Hvis der opstår en fejl, bliver denne blok kørt
+      // Hvis der opstr en fejl, bliver denne blok krt
       console.log("Der opstod en fejl: " + error.message);  // Udskriv fejlmeddelelsen
     }
   }

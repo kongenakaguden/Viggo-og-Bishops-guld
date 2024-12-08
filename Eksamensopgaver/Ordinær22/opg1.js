@@ -49,6 +49,5 @@ console.log(insektK(styrker3, 3))
 
 
 
-/* Først vil jeg lave et for loop der looper igennem arrayet*/
-// Så vil jeg bruge k parametren for at gruppere insekterne
+
 
