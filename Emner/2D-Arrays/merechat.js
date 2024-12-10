@@ -1,89 +1,103 @@
+// Oprettelse af en 2D array (matrix)
 const grid = [
   [1, 2, 3],
   [4, 5, 6],
   [7, 8, 9],
 ];
 
+// Funktion til at printe alle elementer i matrixen
 const printArray = (arr) => {
+  // Iterer gennem hver række (i)
   for (let i = 0; i < arr.length; i++) {
+    // Iterer gennem hver værdi i rækken (j)
     for (let j = 0; j < arr[i].length; j++) {
-      console.log(arr[i][j]);
+      console.log(arr[i][j]); // Outputter hver værdi
     }
   }
 };
 
-printArray(grid);
+printArray(grid); // Kalder printArray for at udskrive matrixen
 
+// Funktion til at beregne summen af alle elementer i matrixen
 const sumAll = (arr) => {
-  let sum = 0;
+  let sum = 0; // Initialiserer sum som 0
+  // Iterer gennem hver række (i)
   for (let i = 0; i < arr.length; i++) {
+    // Iterer gennem hver værdi i rækken (j)
     for (let j = 0; j < arr[i].length; j++) {
-      sum += arr[i][j];
+      sum += arr[i][j]; // Lægger værdien til den samlede sum
     }
   }
 
-  return sum;
+  return sum; // Returnerer summen af alle elementer
 };
 
-console.log(sumAll(grid));
+console.log(sumAll(grid)); // Udskriver summen af alle elementer i grid
 
-// This one i will first make the 2 arrays that the values have to be pushed into eg row and column
-// i will also create a temporary sum, which is the value that will be pushed into the 2 arrays
-// Then i will loop through the nested array to get all the values
-// So the first row = arr[0][j]
 
+// Beregn summen af hver række og hver kolonne
 const calculateRowAndColumnSums = (arr) => {
-  const rowSums = []; // To store the sum of each row
-  const colSums = new Array(arr[0].length).fill(0); // To store the sum of each column, initialized with 0s
+  const rowSums = []; // Array til at gemme summen af hver række
+  const colSums = new Array(arr[0].length).fill(0); // Array til at gemme summen af hver kolonne, initialiseret til 0
 
+  // Iterer gennem hver række (i)
   for (let i = 0; i < arr.length; i++) {
-    // Outer loop for rows
-    let tempSum = 0; // Temporary sum for the current row
+    let tempSum = 0; // Midlertidig sum for den nuværende række
+    // Iterer gennem hver kolonne (j) i den nuværende række
     for (let j = 0; j < arr[i].length; j++) {
-      // Inner loop for columns
-      tempSum += arr[i][j]; // Add the current element to the row sum
-      colSums[j] += arr[i][j]; // Add the current element to the column sum
+      tempSum += arr[i][j]; // Lægger værdien til rækkens sum
+      colSums[j] += arr[i][j]; // Lægger værdien til kolonnens sum
     }
-    rowSums.push(tempSum); // After finishing the row, push the row sum to rowSums
+    rowSums.push(tempSum); // Efter afslutning af rækken, gem summen i rowSums
   }
 
-  return { rowSums, colSums }; // Return both arrays as an object
+  return { rowSums, colSums }; // Returnerer både rækkesummene og kolonnesummene som et objekt
 };
 
 const result = calculateRowAndColumnSums(grid);
-console.log("Row sums:", result.rowSums); // [6, 15, 24]
-console.log("Column sums:", result.colSums); // [12, 15, 18]
+console.log("Row sums:", result.rowSums); // Outputter summen af hver række: [6, 15, 24]
+console.log("Column sums:", result.colSums); // Outputter summen af hver kolonne: [12, 15, 18]
 
+
+// Funktion til at transponere en 2D array (matrix)
 const transposeArr = (arr) => {
-    let transpose = []
-    for (let i = 0; i < arr[0].length; i++){
-        transpose[i] = [];
-        for (let j = 0; j < arr.length; j++){
-            transpose[i].push(arr[j][i]);
-        }
+  let transpose = []; // Initialiserer en tom array til at gemme den transponerede matrix
+  // Iterer gennem hver kolonne (i) i den oprindelige matrix
+  for (let i = 0; i < arr[0].length; i++) {
+    transpose[i] = []; // Initialiserer en tom array for hver kolonne
+    // Iterer gennem hver række (j) i den oprindelige matrix
+    for (let j = 0; j < arr.length; j++) {
+      transpose[i].push(arr[j][i]); // Skifter rækkernes og kolonners positioner
     }
-    return transpose;
-}
+  }
+  return transpose; // Returnerer den transponerede matrix
+};
 
-console.log(transposeArr(grid));
+console.log(transposeArr(grid)); // Udskriver den transponerede version af matrixen
 
+
+// Finding the largest number in a 2D array
 const grid1 = [
-    [1, 22, 3],
-    [14, 5, 16],
-    [7, 8, 19]
+  [1, 22, 3],
+  [14, 5, 16],
+  [7, 8, 19]
 ];
 
+// Funktion til at finde den største værdi i matrixen
 const findLargest = (arr) => {
-    let largest = 0;
-    for (let i = 0; i < arr.length; i++){
-        for (let j = 0; j < arr[i].length; j++){
-            if (largest < arr[i][j]){
-                largest = arr[i][j]
-            }
-        }
+  let largest = 0; // Initialiserer den største værdi som 0
+  // Iterer gennem hver række (i)
+  for (let i = 0; i < arr.length; i++) {
+    // Iterer gennem hver kolonne (j) i rækken
+    for (let j = 0; j < arr[i].length; j++) {
+      // Hvis den nuværende værdi er større end den nuværende største værdi
+      if (largest < arr[i][j]) {
+        largest = arr[i][j]; // Opdaterer den største værdi
+      }
     }
+  }
 
-    return largest;
-}
+  return largest; // Returnerer den største værdi fundet
+};
 
-console.log(findLargest(grid1));
+console.log(findLargest(grid1)); // Outputter den største værdi i grid1, som er 22

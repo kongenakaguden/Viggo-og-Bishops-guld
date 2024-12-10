@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .canvas-container {
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  .rectangles {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
